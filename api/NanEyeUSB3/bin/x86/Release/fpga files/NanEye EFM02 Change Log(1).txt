@@ -1,0 +1,56 @@
+--------------------------------------------------------------------------------
+ AWAIBA Lda
+--------------------------------------------------------------------------------
+ TITLE:       NanEye on EFM02 Change Log
+ FILENAME:    NanEye EFM02 Change Log.txt
+ AUTHOR:      Ricardo Sousa - Electronic Engineer
+              email:  ricardo.sousa@awaiba.com
+
+ CREATED:     17.09.2014
+--------------------------------------------------------------------------------
+ DESCRIPTION: Change log for the NanEye sensor on the EFM02 FPGA development board
+
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+ REVISIONS:
+ DATE         VERSION    AUTHOR      DESCRIPTION
+ 17.09.2014   0.0.1      R. Sousa    Initial version
+ 24.10.2014   0.0.2      R. Sousa    Operates up to 4 NanEye sensors simultaneously 
+									 on connectors J1 to J4;
+                                     Working camera configuration registers, including: 
+									 Gain, Offset, Exposure, Vrst_Pixel, and Vref_cds.
+ 30.10.2014   0.0.3      R. Sousa    Adaptation to XC6SLX150 FPGA
+ 30.12.2014   0.0.4      R. Sousa    Redesigned interface for new FX3 firmware (32 EP)
+                                     to enable FPGA programming through USB 3.0.
+ 18.03.2015   0.0.5      R. Sousa    Included LED Controller.
+ 24.03.2015   0.0.5.2    R. Sousa    Included Auto Illumination Control.
+ 25.03.2015   0.0.5.3    R. Sousa	 Added mechanism to switch master sensor automatically
+									 when the sensor fails  
+ 10.04.2015   0.0.6      R. Sousa    Corrected Multi-camera synchronization core
+                                     - Added mechanism to switch master sensor automatically
+                                       when the sensor fails	
+ 13.04.2015   0.0.7      R. Sousa    Included Auto Exposure Control	
+ 22.04.2015   0.0.8      R. Sousa    Expanded Wishbone base address width
+                                     Interfaced LED Controller, Auto Illumination Control,
+									 Multi-Camera Sync and Auto Exposure Control to 
+									 Master-Slave Wishbone
+ 05.05.2015   0.0.9      R. Sousa    Corrected Auto Illumination Control Enables
+ 30.09.2015   1.0.0      R. Sousa    Release version
+ 11.11.2015   1.1.0      R. Sousa    Update ucf file to NanEye_EFM02_Adapter_v1.1
+                                     Added power monitoring logic (not finalized - disabled)
+ 14.12.2015   1.1.1      R. Sousa    Updated RX_DECODER and RX_DESERIALIZER source files
+ 01.02.2016   2.0.0      R. Sousa    FX3 interface changed to 2 EP:
+                                     - Added DDR2 SDRAM external memory interface
+                                     - Image data from all sensors is stored simultaneously
+                                       in the external memory and readout in sequence as a
+                                       super frame
+                                     Added Led controller soft start PWM
+                                     Activated power monitoring logic:
+                                     - Info sent on Image Header Ext Fields
+                                     Updated to Awaiba Communication Protocol v3.1.0
+ 23.03.2016   2.1.0      R. Sousa    TPG is transmitted on all image slots when no camera is 
+                                     connected
+ 20.04.2016   2.2.0      R. Sousa    Added Image ROM to TPG generation
+--------------------------------------------------------------------------------

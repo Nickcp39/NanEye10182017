@@ -1,0 +1,17 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NanEyeUSB3Demo", "api\NanEyeUSB3Demo.csproj", "{5F5AC06D-0427-4551-B2CF-10C651573978}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5F5AC06D-0427-4551-B2CF-10C651573978}.Release|x86.ActiveCfg = Release|x86
+		{5F5AC06D-0427-4551-B2CF-10C651573978}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
